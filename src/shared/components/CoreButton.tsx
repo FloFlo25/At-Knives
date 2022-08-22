@@ -8,7 +8,6 @@ type Props = {
 export const CoreButton = ({ styles, ...props }: Props) => {
   return (
     <Button
-      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
       //@ts-ignore
       variant='primary'
       style={{ marginBottom: "10px", ...styles }}

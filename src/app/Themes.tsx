@@ -12,7 +12,7 @@ export const themePalette = createTheme({
       light: "#D6D5A8",
     },
     text: {
-      primary: "#e0e0e0",
+      primary: "#ebeabb",
     },
   },
 });
@@ -26,6 +26,8 @@ export const theme = createTheme(themePalette, {
           style: {
             color: themePalette.palette.text.primary,
             background: themePalette.palette.primary.light,
+            boxShadow:
+              "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset",
             fontSize: 17,
             height: 50,
             willChange: "backgroundColor",

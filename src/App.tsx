@@ -1,8 +1,8 @@
 import { Theme, ThemeProvider } from "@mui/material";
 import makeStyles from "@mui/styles/makeStyles";
 import { theme } from "./app/Themes";
-import { CoreButton } from "./components/CoreButton";
-import { Title } from "./components/Title";
+import { CoreButton } from "./shared/components/CoreButton";
+import { Title } from "./shared/components/Title";
 
 const App = () => {
   const classes = useStyle();
@@ -24,6 +24,7 @@ const useStyle = makeStyles((theme: Theme) => ({
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
+    width: "fit-content",
   },
 }));
 
