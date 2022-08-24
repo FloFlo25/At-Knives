@@ -1,31 +1,17 @@
-import { Theme, ThemeProvider } from "@mui/material";
-import makeStyles from "@mui/styles/makeStyles";
+import { ThemeProvider } from "@mui/material";
+import { useRoutes } from "react-router-dom";
+import { routes } from "./app/routes/Routes";
+
 import { theme } from "./app/Themes";
-import { CoreButton } from "./shared/components/CoreButton";
-import { Title } from "./shared/components/Title";
 
 const App = () => {
-  const classes = useStyle();
+  const element = useRoutes(routes);
 
   return (
-    <ThemeProvider theme={theme}>
-      <div className={classes.main}>
-        <Title />
-        <CoreButton>Create lobby</CoreButton>
-        <CoreButton>Join lobby</CoreButton>
-      </div>
-    </ThemeProvider>
+    <>
+        <ThemeProvider theme={theme}>{element}</ThemeProvider>
+    </>
   );
 };
-
-const useStyle = makeStyles((theme: Theme) => ({
-  main: {
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
-    width: "fit-content",
-  },
-}));
 
 export default App;

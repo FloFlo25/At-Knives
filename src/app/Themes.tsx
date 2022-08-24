@@ -30,10 +30,9 @@ export const theme = createTheme(themePalette, {
               "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset",
             fontSize: 17,
             height: 50,
-            willChange: "backgroundColor",
             transition: "all ease-in-out 0.3s",
             width: "250px",
-            "&:hover": {
+            "&:click": {
               backgroundColor: themePalette.palette.primary.dark,
             },
           },
