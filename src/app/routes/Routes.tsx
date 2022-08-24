@@ -20,5 +20,5 @@ export const routes: RouteObject[] = [
     path: `${baseURL}create`,
     element: <CreateLobby />,
   },
-  { path: "*", element: <NoMatch /> },
+  { path: `${baseURL}*`, element: <NoMatch /> },
 ];
