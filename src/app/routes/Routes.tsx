@@ -13,11 +13,11 @@ export const routes: RouteObject[] = [
     element: <Home />,
   },
   {
-    path: "join",
+    path: `${baseURL}join`,
     element: <JoinLobby />,
   },
   {
-    path: "create",
+    path: `${baseURL}create`,
     element: <CreateLobby />,
   },
   { path: "*", element: <NoMatch /> },
