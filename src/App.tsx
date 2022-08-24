@@ -1,5 +1,6 @@
 import { ThemeProvider } from "@mui/material";
 import { useRoutes } from "react-router-dom";
+import { getEnvVarUrl } from "./app/helperFunctions";
 import { routes } from "./app/routes/Routes";
 
 import { theme } from "./app/Themes";
@@ -9,7 +10,7 @@ const App = () => {
 
   return (
     <>
-        <ThemeProvider theme={theme}>{element}</ThemeProvider>
+      <ThemeProvider theme={theme}>{element}</ThemeProvider>
     </>
   );
 };
