@@ -1,12 +1,17 @@
-import "./App.css";
-import { StartPage } from "./features/StartPage/StartPage";
+import { ThemeProvider } from "@mui/material";
+import { useRoutes } from "react-router-dom";
+import { routes } from "./app/routes/Routes";
 
-function App() {
-	return (
-		<div className="App">
-			<StartPage />
-		</div>
-	);
-}
+import { theme } from "./app/Themes";
+
+const App = () => {
+  const element = useRoutes(routes);
+
+  return (
+    <>
+        <ThemeProvider theme={theme}>{element}</ThemeProvider>
+    </>
+  );
+};
 
 export default App;
