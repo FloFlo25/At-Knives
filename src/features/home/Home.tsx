@@ -1,4 +1,3 @@
-import { Theme } from "@mui/material";
 import makeStyles from "@mui/styles/makeStyles";
 import { Title } from "../../shared/components/Title";
 import { CoreButton } from "../../shared/components/CoreButton";
@@ -17,7 +16,7 @@ export const Home = () => {
   );
 };
 
-const useStyle = makeStyles((theme: Theme) => ({
+const useStyle = makeStyles({
   main: {
     display: "flex",
     flexDirection: "column",
@@ -25,4 +24,4 @@ const useStyle = makeStyles((theme: Theme) => ({
     alignItems: "center",
     width: "fit-content",
   },
-}));
+});
