@@ -1,6 +1,5 @@
 import { ThemeProvider } from "@mui/material";
 import { useRoutes } from "react-router-dom";
-import { getEnvVarUrl } from "./app/helperFunctions";
 import { routes } from "./app/routes/Routes";
 
 import { theme } from "./app/Themes";
