@@ -5,11 +5,11 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 
 export default defineConfig(({ command }) => {
   if (command === 'build') return {
-    base: '/',
+    base: '/At-Knives/',
     plugins: [react(), tsconfigPaths()],
   }
   else return {
-    base: '/At-Knives/',
+    base: '/',
     plugins: [react(), tsconfigPaths()],
   }
 })
